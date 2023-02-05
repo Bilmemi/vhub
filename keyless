@@ -1,0 +1,22 @@
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Veincx5315/Created/VHub/Simple'),true))()
+local function callback(Text)
+ if Text == "Button1 text" then
+  print ("ur not wellcome")
+elseif Text == ("Button2 text") then
+ print ("i have ur ip")
+ end
+end
+
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+--
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "geleanino non Key vhub";
+ Text = "credit tô vhub creators";
+ Icon = "";
+ Duration = 30;
+ Button1 = "goffy";
+ Button2 = "ahhh";
+ Callback = NotificationBindable;
+})
